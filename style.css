@@ -1,0 +1,57 @@
+:root {
+    /* primary color*/
+    --clr-primary-1: hsl(14, 100%, 33%, 100%);
+    --clr-seconday-color: hsl(0, 0%, 95%, 100%);
+    /* font color*/
+    --clr-font-color-1: hsl(209, 28%, 19%,100);
+    --clr-font-color-2: hsl(209, 34%, 28%,100);
+
+
+
+}
+
+
+* {
+    background-color: var(--clr-seconday-color);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main_container {
+    padding: 20px;
+}
+.container{
+    display: flex;
+}
+.welcome_notice{
+    text-align: center;
+    color:var(--clr-font-color-1);
+    font-size: 24px;
+}
+.logo{
+    text-align: center;
+}
+input
+{
+    height: 40px;
+    width: 407px;
+    border: 1px solid var(--clr-primary-1);
+    border-radius: 6px;
+    padding-left: 10px;
+    color:var(--clr-font-color-2);
+    margin: 15px;
+}
+
+
+
+.sign_Up {
+    height: 40px;
+    width: 419px;
+    margin-left: 15px;
+    background-color:var(--clr-primary-1);
+    font-size: 24px;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+   box-shadow:  0 5px 15px rgb(0 0 0 / 80%);
+}
