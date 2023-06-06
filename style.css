@@ -41,6 +41,9 @@ input
     color:var(--clr-font-color-2);
     margin: 15px;
 }
+input :active {
+    border:1px solid var(--clr-font-color-1) ;
+}
 
 
 
