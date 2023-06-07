@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <script src="https://kit.fontawesome.com/49d2573058.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- <div class="user_alert"></div> -->
+
+    <div class="main_container">
+        <div class="logo_container">
+            <img src="./Images/Logo.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <div class="gif">
+                <img src="./Images/welcome.svg" class="gif_welcome" alt="" srcset="">
+            </div>
+            <div class="form_container">
+                <div class="logo">
+                    <img src="./Images/secondary.svg" class="" alt="" srcset="">
+                </div>
+               <H2 class="welcome_notice">Welcome to DCKAP Palli's Journal <span> <img src="./Images/Folded_hands.svg" alt=""></span></H2>
+                <form action="./index.php" method="post">
+                    <div class="form_div">
+                        <div class="name_div">
+                            <label for="yourname">Your name:</label><span class="color">*</span><br>
+                            <input class="yourname" type="text" placeholder="Enter your Name" pattern="[a-z,A-Z]*">
+                            
+                        </div>
+                        
+
+                        <label for="fname">Email:</label><span class="color">*</span><br>
+                        <input class="email" type="email" placeholder="Example@gmail.com" required><br><br>
+                        <label for="fname">Password:</label><span class="color">*</span><br>
+                        <input class="password" type="password" placeholder="Password  Must Contain more than 8 Character">
+                        <span class="passicon Password"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <!-- <span class="passwordiconsee"><i class="fa-solid fa-eye"></i></span>-->
+                        <br><br>
+                        <label for="fname">Confirm Password:</label><span class="color">*</span><br>
+                        <p class="Password_alert"></p>
+                        <input class="confirmpassword" type="password" placeholder="Confirm password">
+                        <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <!-- <span class="passwordiconsee"><i class="fa-solid fa-eye"></i></span> <br> -->
+                        <br>
+    
+                        <br>
+                        <button class="signbtn">Sign Up </button>
+                        <p class="add-login">Already have an Account?<a class="add-login-a" href="index.html">Login Here</a>
+                        </p>
+                    
+
+                    <!-- <div class="footer">
+                        <H3>"New One"</H3>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
