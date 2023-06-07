@@ -93,6 +93,11 @@ input:invalid {
     color: red;
 
 }
+span.passicon {
+    position: relative;
+    right: 37px;
+    cursor: pointer;
+}
 
 @keyframes shake {
     25% {
@@ -121,6 +126,7 @@ label {
     border: none;
     border-radius: 10px;
     background-color:var(--clr-primary-1);
+    cursor:pointer;
 }
 
 
