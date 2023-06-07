@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="./homePage.css">
 </head>
-
 <body>
     <div class="container">
-        <div class="headerSection">
-            <header>
-                <div class="sideBar">
-                    <div class="logo">
-                        <img src="./images/Logo.svg" />
-                    </div>
-                    <div class="headerItems">
-                        <a href="#"><img src="./images/Edit.svg" class="newNotes" id="newNotes" />My Journals</a>
-                        <a href="#"><img src="./images/calendar.svg" class="newNotes" id="newNotes" />Calendar</a>
-                        <a href="#"><img src="./images/History.svg" class="newNotes" id="newNotes" />History</a>
-                        <a href="#"><img src="./images/starred.svg" class="newNotes" id="newNotes" />Starred</a>
-                        <a href="#"><img src="./images/profileSetting.svg" class="newNotes" id="newNotes" />Shared with
-                            me</a>
-                        <a href="#" class="settingIcon"><img src="./images/setting.svg" class=""
-                                id="newNotes" />Settings</a>
-                    </div>
+        <div class="general">
+            <div class="sideBar">
+                <div class="logo">
+                    <img src="./images/Logo.svg" class="logoImg" id="logoImg" />
                 </div>
-            </header>
-            <div class="section">
-                <div class="navBar">
-                    <div class="searchDiv">
-                        <img src="./images/searchIcon.svg" class="searchIcon" id="searchIcon" />
-                        <input type="text" class="search" id="search" />
-                    </div>
+                <div class="sideBarItems">
+                    <a href="#" class="headItem" ><img src="./images/Edit.svg" class="newNotes" id="newNotes" />My Journals</a>
+                    <a href="#" class="headItem"><img src="./images/calendar.svg" class="newNotes" id="newNotes" />Calendar</a>
+                    <a href="#" class="headItem"><img src="./images/History.svg" class="newNotes" id="newNotes" />History</a>
+                    <a href="#" class="headItem"><img src="./images/starred.svg" class="newNotes" id="newNotes" />Starred</a>
+                    <a href="#" class="headItem"><img src="./images/profileSetting.svg" class="newNotes" id="newNotes" />Shared with me</a>
+                    <a href="#" class="headItem settingIcon" class="settingIcon"><img src="./images/setting.svg" class="" />Settings</a>
+                </div>
+            </div>
+            <div class="bodyContent">
+                <header class="headerSection">
+                    <img src="./images/searchIcon.svg" class="searchIcon" id="searchIcon" />
+                    <input type="text" class="search" id="search" />
                     <div class="headerIcons">
                         <img src="./images/dark_mode.svg" class="darkMode" id="darkMode" />
                         <img src="./images/Alert.svg" class="alertIcon" id="alertIcon" />
                     </div>
-                    <div class="profile">
-                        <img src="" class="profileImg" />
+                    <div class="profile"></div>
+                </header>
+                <div class="contents">
+                    <div class="welcomePara">
+                        <p class="welcomeGreet">Good Morning Person</p>
+                        <p class="quotes">The office welcomes you today with open arms to be a part of our strong team!</p>
                     </div>
-                </div>
-                <main>
-                    <p class="welcomeGreet">Good Morning Person</p>
-                    <p class="quotes">The office welcomes you today with open arms to be a part of our strong team!</p>
-                </main>
-                <div class="empty">
-                    <img src="./images/animation_500_lhxnxy5b 1.svg" class="emptyImg" />
+                    <div class="noCards">
+                        <img src="./images/animation_500_lhxnxy5b 1.svg" class="emptyImg" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <script src="./index.js"></script> -->
+    <script src="./homePage.js"></script>
 </body>
-
 </html>
