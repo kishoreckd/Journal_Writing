@@ -5,16 +5,16 @@
     --clr-primary-1: hsl(14, 100%, 33%, 100%);
     --clr-seconday-color: hsl(0, 0%, 95%, 100%);
     /* font color*/
-    --clr-font-color-1: hsl(209, 28%, 19%,100);
-    --clr-font-color-2: hsl(209, 34%, 28%,100);
+    --clr-font-color-1: hsl(209, 28%, 19%, 100);
+    --clr-font-color-2: hsl(209, 34%, 28%, 100);
 }
 
 
-body
-{
+body {
     font-family: 'Karla', sans-serif;
 
 }
+
 * {
     background-color: var(--clr-seconday-color);
     margin: 0 auto;
@@ -24,15 +24,18 @@ body
 .main_container {
     padding: 20px;
 }
-.container{
+
+.container {
     display: flex;
 }
-.welcome_notice{
+
+.welcome_notice {
     text-align: center;
-    color:var(--clr-font-color-1);
+    color: var(--clr-font-color-1);
     font-size: 24px;
 }
-.logo{
+
+.logo {
     text-align: center;
 }
 
@@ -52,7 +55,8 @@ body
     height: 41px;
     width: 441px;
 }
-.name_div{
+
+.name_div {
     padding: 10px 0px;
 }
 
@@ -71,7 +75,8 @@ body
     width: 441px;
     border-radius: 10px;
 }
-.color{
+
+.color {
     color: red;
 }
 
@@ -84,7 +89,7 @@ input {
 input:focus {
     color: var(--clr-font-color-1);
     outline: none;
-    box-shadow:3px 3px 8px 0px  rgb(151,150,150);
+    box-shadow: 3px 3px 8px 0px rgb(151, 150, 150);
 }
 
 
@@ -93,6 +98,7 @@ input:invalid {
     color: red;
 
 }
+
 span.passicon {
     position: relative;
     right: 37px;
@@ -112,11 +118,13 @@ span.passicon {
         transform: translateX(4px);
     }
 }
+
 label {
     color: var(--clr-font-color-1);
     font-size: 18px;
     font-weight: 500;
 }
+
 .signbtn {
     text-align: center;
     width: 120px;
@@ -125,8 +133,8 @@ label {
     color: white;
     border: none;
     border-radius: 10px;
-    background-color:var(--clr-primary-1);
-    cursor:pointer;
+    background-color: var(--clr-primary-1);
+    cursor: pointer;
 }
 
 
@@ -141,7 +149,7 @@ label {
 
 p.add-login {
     margin-left: 103px;
-    color:var(--clr-font-color-2);
+    color: var(--clr-font-color-2);
     margin-top: 10px;
 }
 
@@ -150,3 +158,6 @@ a.add-login-a {
     color: var(--clr-primary-1);
     text-decoration: none;
 }
+
+
+
