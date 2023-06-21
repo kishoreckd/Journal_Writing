@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./homePage.css">
+    <title>User Input Page</title>
+    <link rel="stylesheet" href="./emoj.css">
 </head>
 <body>
     <div class="container">
@@ -31,17 +31,37 @@
                     </div>
                 </header>
                 <div class="contents">
-                    <div class="noCards">
-                        <img src="./images/animation_500_lhxnxy5b 1.svg" class="emptyImg" />
+                   <div class="emojCalen">
+                        <div class="calender">
+                            <button class="calenBtn">31 May 2023</button>
+                            <input type="date" class="calender" id="calender" />
+                        </div>
+                        <div class="emojs">
+                            <p>&#128517;</p>
+                            <p>&#128516;</p>
+                            <p>&#128515;</p>
+                            <p>&#128514;</p>
+                            <p>&#128513;</p>
+                        </div>
                     </div>
-                    <div class="quotes">
-                        <p class="quotesPara">No journals were found , please click the above icon and <br> 
-                            get start writing your journals</p>
+                    <div class="toolbar">
+                        <img src="./images/Group 37.svg" class="toolbarContent" />
+                    </div>
+                    <div class="title">
+                        <input type="text" class="userTitle" id="userTitle" placeholder="Title....."/>
+                    </div>
+                    <div class="userInput">
+                        <div class="content">
+                            <textarea class="userContent" id="userContent" placeholder="write or paste your text here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="subBtn">
+                        <button class="pubBtn">Publish</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./homePage.js"></script>
+    <script src="./emoj.js  "></script>
 </body>
 </html>
