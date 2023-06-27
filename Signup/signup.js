@@ -35,6 +35,7 @@ let conformPassword = document.querySelector("#conform-password")
 
 let form =  document.querySelector("form")
 
+let alertMessage = document.querySelector(".text-2")
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
@@ -45,53 +46,39 @@ form.addEventListener("submit",(e)=>{
     let conformPasswordVal = conformPassword.value.trim()
 
     if(FullNameVal === ""){
-        seterror(FullName,"Name is required")
+        seterror(alertMessage,"name reuired")
     }
-    else{
-        setSuccess(FullName,"success")
-    }
-
-    if(EmailVal === ""){
-        seterror(EmailId,"Email is requried")
+    else if(EmailVal === ""){
+        seterror(alertMessage,"email required")
     }
     else if(!validEmail(EmailVal)){
-        seterror(EmailId,"Enter valid email")
+        seterror(alertMessage,"invalid email")
     }
-    else{
-        setSuccess(EmailId,"success")
-    }
-
-    if(PasswordVal ===""){
-        seterror(Password,"password is required")
+    else if(PasswordVal === ""){
+        seterror(alertMessage,"password required")
     }
     else if(!ValidPassword(PasswordVal)){
-        seterror(Password,"enter valid passsowrd")
-    }
-
-    if(PasswordVal != conformPasswordVal){
-        seterror(conformPassword,"password does not match match")
+            seterror(alertMessage,"enter valid passsowrd")
     }
     else if(conformPasswordVal === ""){
-        seterror(conformPassword,"conform password required")
+        seterror(alertMessage,"conform password required")
     }
-    else{
-        setSuccess(conformPassword,"password success")
+    else if(PasswordVal != conformPasswordVal){
+      seterror(alertMessage,"password does not match match")
     }
+    if(FullNameVal === "" && PasswordVal === "" && EmailVal === "" && conformPasswordVal === ""){
+        seterror(alertMessage,"all field is required")
+    }
+
 })
 
 
 //the user give the wrong value in input the setterror function trigger
+
 function seterror(element,message){
-   let TargetElement = element;
-   TargetElement.style.border = "1px solid  hsl(14, 100%, 33%, 100%)"
+    element.innerText = message;
+    toastNotification();
 }
-
-//the user give the correct value in input the setterror function trigger
-function setSuccess(element,message){
-    let TargetElement = element;
-    TargetElement.style.border = "1px solid white"
-}
-
 
 //Email id validation
 const validEmail = (email) =>{
@@ -114,3 +101,40 @@ Allinput.forEach((element)=>{
         element.style.border = "1px solid white"
     })
 })
+
+
+//toast notfication
+
+
+
+
+//toast notfication completed      
+toast = document.querySelector(".toast")
+closeIcon = document.querySelector(".close"),
+progress = document.querySelector(".progress");
+
+let timer1, timer2;
+
+function toastNotification(){
+    toast.classList.add("active");
+    progress.classList.add("active");
+
+    timer1 = setTimeout(() => {
+        toast.classList.remove("active");
+    }, 5000);
+
+    timer2 = setTimeout(() => {
+      progress.classList.remove("active");
+    }, 5300);
+}
+
+closeIcon.addEventListener("click", () => {
+    toast.classList.remove("active");
+    
+    setTimeout(() => {
+      progress.classList.remove("active");
+    }, 300);
+
+    clearTimeout(timer1);
+    clearTimeout(timer2);
+  });
