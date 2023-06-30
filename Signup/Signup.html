@@ -17,7 +17,6 @@
         <div class="logo_container">
             <img src="./Images/Logo.svg" alt="" srcset="">
         </div>
-
         <div class="container">
             <div class="toast">
                 <div class="toast-content">
@@ -29,9 +28,11 @@
                 <i class="fa-solid fa-xmark close"></i>
                 <div class="progress"></div>
             </div>
-        
             <div class="gif">
                 <img src="./Images/welcome.svg" class="gif_welcome" alt="" srcset="">
+                <div class="sign-btn">
+                    <button  id="signin-btn">signIn With Google</button>
+                </div>
             </div>
             <div class="form_container">
                <H2 class="welcome_notice">Welcome to DCKAP Palli's Journal <span>👋</span></H2>        
@@ -40,10 +41,7 @@
                         <div class="name_div">
                             <label for="your-name">Your name:</label><span class="color">*</span><br>
                             <input class="yourname" id="your-name"type="text" placeholder="Enter your Name" >
-                        
                         </div>
-                        
-
                        <div>
                         <label for="emailId">Email:</label><span class="color">*</span><br>
                         <input class="email" id="emailId" type="email" placeholder="Example@gmail.com" ><br><br>
@@ -71,7 +69,7 @@
         </div>
     </div>
 
-    <script src="signup.js"></script>
+    <script type="module" src="signup.js"></script>
 </body>
 
 </html>

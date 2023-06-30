@@ -27,8 +27,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .welcome_notice {
@@ -247,4 +247,22 @@ a.add-login-a {
     100%{
         right: 100%;
     }
+}
+
+
+/* //signin button */
+
+.sign-btn button{
+    width: 120px;
+    height: 40px;
+    outline: none;
+    background-color: var(--clr-primary-1);
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+.sign-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }

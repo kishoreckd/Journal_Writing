@@ -108,8 +108,7 @@ Allinput.forEach((element)=>{
 
 
 
-//toast notfication completed      
-toast = document.querySelector(".toast")
+let toast = document.querySelector(".toast"),
 closeIcon = document.querySelector(".close"),
 progress = document.querySelector(".progress");
 
@@ -138,3 +137,49 @@ closeIcon.addEventListener("click", () => {
     clearTimeout(timer1);
     clearTimeout(timer2);
   });
+
+
+//toast notfication completed      
+
+
+//Sign in with google feature
+
+let SignWithGoogle =  document.querySelector("#signin-btn")
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+import { GoogleAuthProvider,getAuth,signInWithPopup } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+const firebaseConfig = {
+    apiKey: "AIzaSyA7Ec_SXBzTMCPGFPLFFQDq9X1Ssa04mcM",
+    authDomain: "sign-with-70f9f.firebaseapp.com",
+    projectId: "sign-with-70f9f",
+    storageBucket: "sign-with-70f9f.appspot.com",
+    messagingSenderId: "746412764342",
+    appId: "1:746412764342:web:8532002d3f0b895cfd0a17"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider(app);
+
+
+let Authentication = () =>{
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;  
+        console.log(user);            
+    }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        const email = error.customData.email;
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        alert(errorMessage);
+    });
+}
+
+SignWithGoogle.addEventListener("click",Authentication);
