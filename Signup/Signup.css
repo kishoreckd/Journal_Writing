@@ -168,7 +168,6 @@ a.add-login-a {
 
 /* toast notofication */
 
-
 .toast{
     position: absolute;
     top: 20px;
@@ -182,11 +181,9 @@ a.add-login-a {
     transform: translateX(calc(100% + 30px));
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
 }
-
 .toast.active{
     transform: translateX(0%);
 }
-
 .toast .toast-content{
     display: flex;
     align-items: center;
@@ -204,14 +201,12 @@ a.add-login-a {
     font-size: 20px;
     border-radius: 50%;
 }
-
 .toast-content .message{
     display: flex;
     flex-direction: column;
     margin: 0 25px;
     background: white;
 }
-
 .toast .close{
     position: absolute;
     top: 4px;
@@ -245,8 +240,6 @@ a.add-login-a {
 .message  span{
     background-color: white;
 }
-
-
 .progress.active:before{
     animation: progress 5s linear forwards;
 }
