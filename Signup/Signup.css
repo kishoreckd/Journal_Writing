@@ -27,6 +27,8 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .welcome_notice {
@@ -166,13 +168,14 @@ a.add-login-a {
 
 /* toast notofication */
 
+
 .toast{
     position: absolute;
     top: 20px;
     right: 30px;
     border-radius: 12px;
-    background: #fff;
-    padding: 10px 10px;
+    background: white;
+    padding: 10px 10px 10px 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     border-left: 6px solid var(--clr-primary-1);
     overflow: hidden;
@@ -187,6 +190,7 @@ a.add-login-a {
 .toast .toast-content{
     display: flex;
     align-items: center;
+    background: white;
 }
 
 .toast-content .check{
@@ -204,27 +208,17 @@ a.add-login-a {
 .toast-content .message{
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
-}
-
-.message .text{
-    font-size: 20px;
-    font-weight: 400;;
-    
-}
-
-.message .text.text-1{
-    font-weight: 600;
-   
+    margin: 0 25px;
+    background: white;
 }
 
 .toast .close{
     position: absolute;
-    top: 10px;
-    right: 15px;
-    padding: 5px;
+    top: 4px;
+    right: 12px;
     cursor: pointer;
     opacity: 0.7;
+    background: white;
 }
 
 .toast .close:hover{
@@ -248,16 +242,16 @@ a.add-login-a {
     width: 100%;
     background-color: var(--clr-primary-1);
 }
-.message div span{
+.message  span{
     background-color: white;
 }
+
+
 .progress.active:before{
     animation: progress 5s linear forwards;
 }
-
 @keyframes progress {
     100%{
         right: 100%;
     }
 }
-
