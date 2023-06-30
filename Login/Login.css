@@ -28,6 +28,8 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .welcome_notice {
@@ -165,8 +167,8 @@ input#emailId {
     top: 20px;
     right: 30px;
     border-radius: 12px;
-    background: #fff;
-    padding: 10px 10px;
+    background: white;
+    padding: 10px 10px 10px 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     border-left: 6px solid var(--clr-primary-1);
     overflow: hidden;
@@ -181,6 +183,7 @@ input#emailId {
 .toast .toast-content{
     display: flex;
     align-items: center;
+    background: white;
 }
 
 .toast-content .check{
@@ -198,24 +201,20 @@ input#emailId {
 .toast-content .message{
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 25px;
+    background: white;
 }
 
-.message .text{
-    font-size: 20px;
-    font-weight: 400;;
-    
-}
 
 
 
 .toast .close{
     position: absolute;
-    top: 10px;
-    right: 15px;
-    padding: 5px;
+    top: 4px;
+    right: 12px;
     cursor: pointer;
     opacity: 0.7;
+    background: white;
 }
 
 .toast .close:hover{
@@ -239,7 +238,7 @@ input#emailId {
     width: 100%;
     background-color: var(--clr-primary-1);
 }
-.message div span{
+.message  span{
     background-color: white;
 }
 .progress.active:before{
